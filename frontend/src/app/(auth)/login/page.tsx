@@ -48,6 +48,7 @@ const LoginZ = () => {
     setIsSubmittine(true);
 
     try {
+      console.log("login url:", process.env.NEXT_PUBLIC_API_URL);
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_API_URL}/user/login`,
         values
